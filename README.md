@@ -1,3 +1,4 @@
+# my-resume
 » On Firefox:
 - You probably need to remove any page margins in about:config.
 - Uncheck Ignore Scaling and Shrink To Fit Page Width.
