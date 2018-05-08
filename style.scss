@@ -29,7 +29,7 @@ $sidebar-h3-color: #007bff;
 :root {
     --page-width: 8.5in;
     --page-height: 12.5in;
-    --main-width: 6.4in;
+    --main-width: 6.2in;
     --sidebar-width: calc(var(--page-width) - var(--main-width));
     --decorator-horizontal-margin: 0.2in;
     --sidebar-horizontal-padding: 0.2in;
@@ -350,18 +350,45 @@ h2 {
     margin-top: 0.5in;
 }
 
+
+.bold {
+    font-weight: bold;
+}
+
 .contactInfo {
+    .title {
+        border-bottom: 1px solid #666;
+        padding: 4px 0 ;
+        margin-bottom: 8px;
+    }
     ul {
         margin-top: 0.05in;
         padding-left: 0;
-        font-family: "Source Code Pro";
+        //font-family: "Source Code Pro";
         font-weight: 400;
         line-height: 1.75;
+        li {
+            margin-bottom: 4px;
+        }
+        .icon, .detail {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .icon {
+            margin-right: 8px;
+        }
+        .detail {
+            line-height: 14px;
+        }
     }
     li>i {
         width: 9pt;
         /* for text alignment */
         text-align: right;
+        &:before {
+            font-size: 15px;
+        }
+
     }
 }
 
