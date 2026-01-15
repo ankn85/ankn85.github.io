@@ -79,7 +79,7 @@ li {
     /* for disclaimer */
     width: var(--sidebar-width);
     height: 100%;
-    padding: 0.6in var(--sidebar-horizontal-padding);
+    padding: 0 var(--sidebar-horizontal-padding);
     background-color: $sidebar-background-color;
     font-size: $sidebar-font-size;
 }
@@ -263,6 +263,22 @@ h2 {
     &:not(.concise) {
         .details div {
             margin: 0.18in 0 0.1in 0;
+            &.tags {
+                margin: 0;
+                padding: 0;
+                float: right;
+
+                .tag {
+                    display: inline-block;
+                    background-color: #eee;
+                    color: #434343;
+                    font-size: 5.5pt;
+                    font-weight: 600;
+                    padding: 2pt 5pt;
+                    margin: 0 3pt 3pt 0;
+                    border-radius: 3pt;
+                }
+            }
         }
         .blocks:last-child .details div {
             margin-bottom: 0;
